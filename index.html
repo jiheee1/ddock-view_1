@@ -1,0 +1,293 @@
+<idoctype html>
+<head>
+	<meta charset = "utf-8">
+
+
+	<link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Paytone+One&display=swap" rel="stylesheet">
+
+
+	<style>
+		html {width: 100%;}
+		body {width: 100%; margin: 0px;}
+
+		header {height:44px; position: fixed ;z-index: 9999;}
+		header #logo {float:left;  width:100px;height:44px;line-height: 44px;text-align: center;color:black;font-size: 0.8em;font-weight:400;}
+
+		h1{font-family: 'Paytone One', sans-serif; position: absolute; font-size: 30px; color: black; margin:0px; opacity: 0;}
+
+		h2{font-family: 'Spoqa Han Sans';  font-weight: 300; position: absolute; word-break: keep-all;  line-height: 1.6em; font-size: 30px;  z-index: 997; margin:0px; opacity: 0;}
+		h3{font-family: 'Spoqa Han Sans';  font-weight: 700; position: absolute; word-break: keep-all;  line-height: 1.6em; font-size: 25px;  z-index: 997; margin:0px; opacity: 1;float: left;}
+		h4{font-family: 'Spoqa Han Sans';  font-weight: 300; position: absolute; word-break: keep-all;  line-height: 1.8em; font-size: 35px;  z-index: 997; margin:0px; opacity: 1;}
+		h5{font-family: 'Spoqa Han Sans';  font-weight: 300; position: absolute; word-break: keep-all;  line-height: 1.8em; font-size: 35px;  z-index: 997; margin:0px; opacity: 1; color:white;}
+
+		mark{background:#2f36e6 }
+		
+		p{font-family: 'Spoqa Han Sans';  position: absolute; word-break: keep-all; line-height: 1.8em; font-size: 18px;  z-index: 997; margin:0px; }
+
+		#monitor{position: fixed; background: black; top: 0px; right: 0px; width: 70px; height: 20px; padding: 5px; color: white;}
+		
+	
+
+
+		.section { width:100%; height:100%; margin:0; position: relative}
+		#sectionA{ width: 100%;  background-image: url('./img/cover3.png');
+			background-size: cover; transition: all 1s; }
+		#sectionB{ background: white; transition: all 1s; }
+		#sectionC{ background: white; transition: all 1s;}
+		#sectionD{ background: white; transition: all 1s; }
+		#sectionE{ background: #f7f4f2; transition: all 1s; }
+		
+
+		#titleB{width:100%; position:relative; height:50px; right:-150px; top: 50px; float: left;}
+		#textB{ width:100%;position:relative; height:200px; right:-150px; top: 50px; float: left; margin:0px;}
+		#mainB{ width:600px; position:relative; height:150px; top: 20px; float: left; margin-top: 10px;}
+		#subB{ width:700px;position:relative; height:150px;  margin-left:70px; top: 20px; float: left; margin-top: 10px; opacity: 0;}
+		#imgB{position:relative; width:100%; height:500px; top: 50px; float: left; opacity: 0;}
+
+
+		#titleC{ width:100%; position:relative; height:50px; right:-150px; top: 50px; float: left;}
+		#textC{ width:750px;position:relative; height:660px; right:-150px; top: 40px; float: left; margin:0px;}
+		#insightC{ width:750px;position:relative; height:660px; right:-150px; top: 40px; float: left; margin:0px; opacity:0;}
+		#mainC1{ width:750px; position:relative; height:200px; top: 20px; float: left; margin-top: 10px;overflow:hidden; opacity: 0;}
+		#mainC2{ width:750px; position:relative; height:200px; top: 20px; float: left; margin-top: 10px;overflow:hidden; opacity: 0;}
+		#mainC3{ width:750px; position:relative; height:200px; top: 20px; float: left; margin-top: 10px; overflow:hidden; opacity: 0;}
+		.icon{width:200px; height:200px;float: left;}
+		.textc1{width:500px; height:200px; margin-top: 50px; margin-left: 50px;float: left;}
+		.textc1_1{width:500px; height:50px;float: left;}
+		.textc1_2{width:500px; height:130px;float: left;}
+		#imgC{position:relative; width:100%; height:700px; top: 50px; float: left; opacity: 0;}
+
+		.arrow{width:200px;height:200px; float: left; margin-top: 250px;}
+		.insight_text{width:450px; margin-left: 80px;  margin-top: 245px;float: left;}
+
+	
+		#titleD{ width:100%; position:relative; height:50px; right:-150px; top: 50px; float: left;}
+		#titleD2{ width:100%; position:relative; height:70px; right:-150px; top: 60px; float: left;opacity:0;}
+		#textD{ width:700px;position:relative; height:660px; right:-120px; top: 100px; float: left; margin:0px; opacity: 0;}
+		#textD2{ width:700px;position:relative; height:660px; right:-150px; top: 100px; float: left; margin:0px; opacity: 0;}
+
+		#titleE{ width:100%; position:relative; height:50px; right:-150px; top: 50px; float: left;}
+
+
+		#titleG{position:relative; transition: all 1s;}
+		
+	
+
+		@keyframes aani{from{opacity: 0;} to{opacity: 1;}}
+		
+		@keyframes dvi{from{opacity: 0; left: -500px;} 
+		to{opacity: 1; left: calc(50% - 450px);}}
+
+		@keyframes dani{from{opacity: 0; left: 1500px;} 
+		to{opacity: 1; left: calc(50% + 70px);}}
+
+		@keyframes vi{from{opacity: 0; left: -500px;} 
+		to{opacity: 1; left: calc(50% - 550px); }}
+
+		@keyframes vi2{from{opacity: 0; top:500px;} 
+		to{opacity: 1; top: 350px; }}
+
+
+		@keyframes vi3{from{opacity: 0; left: 1500px;} 
+		to{opacity: 1; left: calc(50% + 100px); }}
+
+
+
+</style>
+</head>
+<body>
+<header>
+	<div id="logo">
+			똑뷰
+		</div>
+</header>
+
+<div id="monitor"></div>
+<div class="section" id="sectionA">
+
+</div>
+
+
+<div class="section" id="sectionB">
+
+		<div id="titleB">
+			<h1 id=bh1>overview</h1>
+		</div>
+
+		<div id="textB">
+			<div id="mainB">
+				<h2 id=bh2>곧 우리의 모습이 될 <strong>취업 준비생</strong>. <br> 우리를 위한 서비스, <strong>똑뷰</strong></h2>
+			</div>
+			<div id="subB">
+				<p id=bp>서비스를 기획할 때에 앞서 내가 가장 사용자를 이해할 수 있는 게 무엇일까?
+					수많은 정보 속에서 헤매고 있는 취업 준비생들과, 혼자 면접 준비가 버거운 취업 준비생들을 위해 한 사람만의 <br>딱 맞는 면접 준비 서비스가 필요하면 어떨까?라는 고민에서 시작된 서비스입니다.</p>
+			</div>
+
+		</div>
+
+		<div id="imgB">
+			<img id="bi" src="./img/img_b.png" width="100%" >
+		</div>
+
+</div>	
+
+
+<div class="section" id="sectionC">
+	
+	<div id="titleC">
+			<h1 id=ch1>Basic Research</h1>
+	</div>
+
+		<div id="textC">
+			<div id="mainC1">
+				<div class="icon">
+					<img src="./img/icon1.png" width="100%" >
+				</div>
+				<div class="textc1">
+					<div class="textc1_1">
+						<h3>1.취업준비생 50만, 실업자 19년만 최대</h3>
+					</div>
+					<div class="textc1_2">
+						<p>작년 대비 청년 실업자는 4만 6000명 증가,<br> 실업률은 사상 최대인 11.5%를 기록</p>
+					</div>	
+				</div>
+			</div>
+
+			<div id="mainC2">
+				<div class="icon">
+					<img src="./img/icon2.png" width="100%" >
+				</div>
+				<div class="textc1">
+					<div class="textc1_1">
+						<h3>2.면접 패키지, 면접 스터디 활성화</h3>
+					</div>
+					<div class="textc1_2">
+						<p>다양한 면접 학원, 스터디 등의 수요 늘어남.<br>취준생들의 면접에 대한 니즈가 증가</p>
+					</div>	
+				</div>
+			</div>
+
+			<div id="mainC3">
+				<div class="icon">
+					<img src="./img/icon3.png" width="100%" >
+				</div>
+				<div class="textc1">
+					<div class="textc1_1">
+						<h3>3.인공지능이 면접관으로 AI 면접 시대</h3>
+					</div>
+					<div class="textc1_2">
+						<p>인공지능 면접관을 사용하여<br> 면접을 진행하는 기업들의 증가</p>
+					</div>	
+				</div>
+			</div>
+
+		</div>
+
+		<div id="insightC">
+			<div id="mainC">
+				<div class="arrow">
+					<img src="./img/arrow.png" width="100%" >
+				</div>
+					<div class="insight_text">
+						<h5 style="color:white;"><mark>면접 정보 수집의<br>어려움을 호소함과 동시에<br>모의면접의 필요성 강조</mark></h5>
+					</div>	
+
+			</div>
+		</div>
+
+</div>
+
+
+
+
+<div class="section" id="sectionD">
+	<div id="titleD">
+		<h1 id=dh1>UX Strategy</h1>
+	</div>
+	
+	<div id="titleD2">
+		<h3>“맞춤형 서비스로 성공적인 면접을 이끌어내는 면접 도우미”</h3>
+	</div>
+	<div id="textD"><img src="./img/strategy_2.png" width="100%" ></div>
+	<div id="textD2"><img src="./img/strategy_1.png" width="100%" ></div>
+</div>
+
+
+
+
+
+<div class="section" id="sectionE">
+	<div id="titleE">
+		<h1 id=eh1>Wireframe</h1>
+	</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="section" id="sectionG">
+</div>
+
+<div class="section" id="sectionH">
+</div>
+
+<div class="section" id="sectionI">    
+</div>
+
+
+<script type="text/javascript">
+		window.onscroll = function(){
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+		monitor.innerHTML = t.toFixed(1);
+
+		if ( t > 150) {bh1.style.animation = "aani 2s forwards";}
+		else{bh1.style.animation = "";}
+		if ( t > 150) {bh2.style.animation = "aani 2s forwards";}
+		else{bh2.style.animation = "";}
+		if ( t > 150) {subB.style.animation = "aani 2s forwards";}
+		else{subB.style.animation = "";}
+		if ( t > 650) {imgB.style.animation = "aani 2s forwards";}
+		else{imgB.style.animation = "";}
+
+
+		if ( t > 1180) {ch1.style.animation = "aani 2s forwards";}
+		else{ch1.style.animation = "";}
+	 	if ( t > 1240) {mainC1.style.animation = "aani 2s forwards";}
+		else{mainC1.style.animation = "";}
+		if ( t > 1440) {mainC2.style.animation = "aani 2s forwards";}
+		else{mainC2.style.animation = "";}
+		if ( t > 1640) {mainC3.style.animation = "aani 2s forwards";}
+		else{mainC3.style.animation = "";}
+		if ( t > 1650) {insightC.style.animation = "aani 2s forwards";}
+		else{insightC.style.animation = "";}
+
+
+
+		if ( t > 2080) {dh1.style.animation = "aani 2s forwards";}
+		else{dh1.style.animation = "";}
+		if ( t > 2100) {titleD2.style.animation = "aani 2s forwards";}
+		else{titleD2.style.animation = "";}
+		if ( t > 2230) {textD.style.animation = "aani 2s forwards";}
+		else{textD.style.animation = "";}
+		if ( t > 2400) {textD2.style.animation = "aani 2s forwards";}
+		else{textD2.style.animation = "";}
+
+
+		if ( t > 2840) {eh1.style.animation = "aani 2s forwards";}
+		else{eh1.style.animation = "";}
+
+
+
+}
+	</script>
+
+</body>
